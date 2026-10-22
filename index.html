@@ -3,26 +3,91 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>hola mundo</title>
-  <style>
-    :root { color-scheme: dark; }
-    html, body { height: 100%; margin: 0; }
-    body {
-      display: grid;
-      place-items: center;
-      background: #0a0a0a;
-      color: #f5f5f5;
-      font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
-    }
-    h1 {
-      margin: 0;
-      font-size: clamp(2rem, 8vw, 5rem);
-      font-weight: 700;
-      letter-spacing: -0.03em;
-    }
-  </style>
+  <title>laopro — proyectos y experimentos</title>
+  <meta name="description" content="Proyectos y experimentos de laopro. Herramientas pequeñas que resuelven problemas propios.">
+  <meta name="color-scheme" content="light dark">
+  <meta name="theme-color" content="#F5F3EE" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#0E0E0E" media="(prefers-color-scheme: dark)">
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://laopro.github.io/">
+  <meta property="og:title" content="laopro — proyectos y experimentos">
+  <meta property="og:description" content="Herramientas pequeñas que resuelven problemas propios.">
+  <meta property="og:image" content="https://laopro.github.io/assets/og.png">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
+  <link rel="preload" href="assets/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="preload" href="assets/fonts/ibm-plex-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <h1>hola mundo</h1>
+  <a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
+
+  <header class="site-header">
+    <div class="wrap header-inner">
+      <a class="wordmark" href="/">laopro</a>
+      <nav class="nav">
+        <a href="#proyecto" data-i18n="nav.project">Proyecto</a>
+        <a href="#sobre-mi" data-i18n="nav.about">Sobre mí</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido">
+    <section class="hero wrap">
+      <p class="kicker" data-i18n="hero.kicker">Proyectos y experimentos</p>
+      <h1 data-i18n="hero.title">Construyo cosas, casi siempre por gusto.</h1>
+      <p class="lede" data-i18n="hero.lede">Herramientas pequeñas que resuelven problemas míos. Si sirven para alguien más, mejor.</p>
+    </section>
+
+    <section id="proyecto" class="project wrap">
+      <p class="section-label" data-i18n="project.label">Proyecto</p>
+      <div class="project-grid">
+        <div class="project-info">
+          <p class="index">01</p>
+          <h2><a href="https://github.com/laopro/list2audioxd" target="_blank" rel="noopener noreferrer">list2audioxd</a></h2>
+          <p class="project-desc" data-i18n="project.desc">Descarga playlists de YouTube Music como audio. GUI para Windows y CLI, perfiles de calidad y descargas incrementales.</p>
+          <p class="meta"><span>2026</span><span>Python</span><span>MIT</span></p>
+          <a class="project-link" href="https://github.com/laopro/list2audioxd" target="_blank" rel="noopener noreferrer"><span data-i18n="project.link">Ver repo</span> <span class="arrow" aria-hidden="true">↗</span></a>
+        </div>
+        <div class="terminal" aria-hidden="true">
+<pre>┌──────────────────────────────────────────────┐
+│  list2audio xd                               │
+│                                              │
+│  Playlist URL                                │
+│  [ https://www.youtube.com/playlist?list=.. ]│
+│                                              │
+│  Save to: C:\Users\you\Music  [Browse]       │
+│                                              │
+│  Quality                                     │
+│  [ Light ] [ Universal ] [ Full ] [ Custom ] │
+│                                              │
+│  [      Download playlist      ]             │
+│  ██████████████████░░░░  37/50               │
+│  Downloading: 14. Artist - Song              │
+└──────────────────────────────────────────────┘</pre>
+        </div>
+      </div>
+      <p class="after" data-i18n="project.after">El resto de mis proyectos vive en local, sin publicar.</p>
+    </section>
+
+    <section id="sobre-mi" class="about wrap">
+      <p class="section-label" data-i18n="about.label">Sobre mí</p>
+      <p class="about-text" data-i18n="about.text">Soy laopro. Aprendo construyendo y publico lo que queda bien. Casi todo empieza como una necesidad mía; si termina sirviendo a alguien más, mejor.</p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap footer-inner">
+      <p class="copyright">© 2026 laopro</p>
+      <nav class="social">
+        <a href="https://github.com/laopro" target="_blank" rel="me noopener noreferrer">GitHub ↗</a>
+        <a href="https://www.youtube.com/@laopro13" target="_blank" rel="me noopener noreferrer">YouTube ↗</a>
+        <a href="https://www.instagram.com/laopro13" target="_blank" rel="me noopener noreferrer">Instagram ↗</a>
+      </nav>
+      <p class="handmade" data-i18n="footer.handmade">Hecho a mano.</p>
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
 </body>
 </html>
