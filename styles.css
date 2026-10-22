@@ -146,7 +146,12 @@ a:hover {
 /* Hero */
 
 .hero {
-  padding-block: clamp(64px, 14vh, 140px) clamp(56px, 11vh, 120px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  min-height: calc(100vh - 110px);
+  min-height: calc(100svh - 110px);
+  padding-block: clamp(56px, 9vh, 112px);
 }
 
 .kicker,
@@ -166,22 +171,22 @@ a:hover {
 h1 {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(2.75rem, 8.5vw, 6.5rem);
-  line-height: 0.98;
-  letter-spacing: -0.02em;
+  font-size: clamp(2.9rem, 9vw, 7.5rem);
+  line-height: 0.94;
+  letter-spacing: -0.03em;
   margin: 0;
-  max-width: 15ch;
+  max-width: 18ch;
 }
 
 .lede {
-  max-width: 44ch;
-  margin: 28px 0 0;
+  max-width: 42ch;
+  margin: 32px 0 0;
   color: var(--muted);
-  font-size: clamp(1rem, 1.5vw, 1.15rem);
+  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
 }
 
 .stack {
-  margin: 24px 0 0;
+  margin: 28px 0 0;
   font-family: var(--font-mono);
   font-size: 0.72rem;
   letter-spacing: 0.1em;
@@ -193,7 +198,7 @@ h1 {
 
 .project {
   border-top: 1px solid var(--line);
-  padding-block: clamp(48px, 9vh, 96px);
+  padding-block: clamp(64px, 10vh, 120px);
 }
 
 .section-label {
@@ -217,7 +222,7 @@ h1 {
 h2 {
   font-family: var(--font-display);
   font-weight: 400;
-  font-size: clamp(2rem, 4vw, 3.5rem);
+  font-size: clamp(2.2rem, 4.4vw, 4rem);
   line-height: 1.05;
   letter-spacing: -0.015em;
   margin: 0;
@@ -268,7 +273,7 @@ h2 a {
 .terminal pre {
   margin: 0;
   font-family: ui-monospace, "Cascadia Mono", "Cascadia Code", Consolas, "SFMono-Regular", Menlo, monospace;
-  font-size: clamp(0.6rem, 1vw, 0.75rem);
+  font-size: clamp(0.6rem, 0.95vw, 0.78rem);
   line-height: 1.5;
   color: var(--muted);
   white-space: pre;
@@ -290,7 +295,7 @@ h2 a {
   grid-template-columns: 200px minmax(0, 1fr);
   gap: 32px;
   border-top: 1px solid var(--line);
-  padding-block: clamp(48px, 9vh, 96px);
+  padding-block: clamp(64px, 10vh, 120px);
 }
 
 .about .section-label {
@@ -299,16 +304,18 @@ h2 a {
 
 .about-text {
   margin: 0;
-  max-width: 56ch;
-  font-size: clamp(1.05rem, 1.6vw, 1.25rem);
-  line-height: 1.6;
+  max-width: 26ch;
+  font-family: var(--font-display);
+  font-size: clamp(1.6rem, 3.2vw, 2.6rem);
+  line-height: 1.25;
+  letter-spacing: -0.01em;
 }
 
 /* Footer */
 
 .site-footer {
   border-top: 1px solid var(--line);
-  padding-block: 28px 44px;
+  padding-block: 32px 56px;
 }
 
 .footer-inner {
