@@ -257,7 +257,7 @@ h2 a {
 
 .terminal pre {
   margin: 0;
-  font-family: var(--font-mono);
+  font-family: ui-monospace, "Cascadia Mono", "Cascadia Code", Consolas, "SFMono-Regular", Menlo, monospace;
   font-size: clamp(0.6rem, 1vw, 0.75rem);
   line-height: 1.5;
   color: var(--muted);
