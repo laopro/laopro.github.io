@@ -253,6 +253,7 @@ h2 a {
 .terminal {
   overflow-x: auto;
   padding-top: 6px;
+  justify-self: end;
 }
 
 .terminal pre {
@@ -342,6 +343,10 @@ h2 a {
 
   h1 {
     max-width: none;
+  }
+
+  .terminal {
+    justify-self: start;
   }
 
   .terminal pre {
