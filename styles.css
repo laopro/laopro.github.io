@@ -285,6 +285,26 @@ h2 a {
   white-space: pre;
 }
 
+.game-shot {
+  justify-self: end;
+  display: block;
+  width: min(100%, 380px);
+  border: 1px solid var(--line);
+  line-height: 0;
+  overflow: hidden;
+}
+
+.game-shot img {
+  display: block;
+  width: 100%;
+  height: auto;
+  transition: opacity 0.18s ease-out;
+}
+
+.game-shot:hover img {
+  opacity: 0.88;
+}
+
 .after {
   margin: 44px 0 0;
   padding-left: 16px;
@@ -368,6 +388,10 @@ h2 a {
   }
 
   .terminal {
+    justify-self: start;
+  }
+
+  .game-shot {
     justify-self: start;
   }
 
