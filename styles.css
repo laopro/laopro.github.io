@@ -201,6 +201,12 @@ h1 {
   padding-block: clamp(64px, 10vh, 120px);
 }
 
+.project-item + .project-item {
+  margin-top: clamp(56px, 9vh, 96px);
+  padding-top: clamp(56px, 9vh, 96px);
+  border-top: 1px solid var(--line);
+}
+
 .section-label {
   margin-bottom: 32px;
 }

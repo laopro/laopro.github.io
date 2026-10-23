@@ -17,7 +17,7 @@
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/instrument-serif-latin.woff2" as="font" type="font/woff2" crossorigin>
   <link rel="preload" href="assets/fonts/ibm-plex-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=4">
+  <link rel="stylesheet" href="styles.css?v=5">
 </head>
 <body>
   <a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
@@ -41,16 +41,18 @@
     </section>
 
     <section id="proyecto" class="project wrap">
-      <p class="section-label" data-i18n="project.label">Proyecto</p>
-      <div class="project-grid">
-        <div class="project-info">
-          <p class="index">01</p>
-          <h2><a href="https://github.com/laopro/list2audioxd" target="_blank" rel="noopener noreferrer">list2audioxd</a></h2>
-          <p class="project-desc" data-i18n="project.desc">Descarga playlists de YouTube Music como audio. GUI para Windows y CLI, perfiles de calidad y descargas incrementales.</p>
-          <p class="meta"><span>2026</span><span>Python</span><span>MIT</span></p>
-          <a class="project-link" href="https://github.com/laopro/list2audioxd" target="_blank" rel="noopener noreferrer"><span data-i18n="project.link">Ver repo</span> <span class="arrow" aria-hidden="true">↗</span></a>
-        </div>
-        <div class="terminal" aria-hidden="true">
+      <p class="section-label" data-i18n="project.label">Proyectos</p>
+
+      <article class="project-item">
+        <div class="project-grid">
+          <div class="project-info">
+            <p class="index">01</p>
+            <h2><a href="https://github.com/laopro/list2audioxd" target="_blank" rel="noopener noreferrer">list2audioxd</a></h2>
+            <p class="project-desc" data-i18n="project.desc">Descarga playlists de YouTube Music como audio. GUI para Windows y CLI, perfiles de calidad y descargas incrementales.</p>
+            <p class="meta"><span>2026</span><span>Python</span><span>MIT</span></p>
+            <a class="project-link" href="https://github.com/laopro/list2audioxd" target="_blank" rel="noopener noreferrer"><span data-i18n="project.link">Ver repo</span> <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <div class="terminal" aria-hidden="true">
 <pre>┌──────────────────────────────────────────────┐
 │  list2audio xd                               │
 │                                              │
@@ -66,8 +68,39 @@
 │  ██████████████████░░░░  37/50               │
 │  Downloading: 14. Artist - Song              │
 └──────────────────────────────────────────────┘</pre>
+          </div>
         </div>
-      </div>
+      </article>
+
+      <article class="project-item">
+        <div class="project-grid">
+          <div class="project-info">
+            <p class="index">02</p>
+            <h2><a href="https://github.com/laopro/talkicut" target="_blank" rel="noopener noreferrer">talkicut</a></h2>
+            <p class="project-desc" data-i18n="project.desc2">Convierte grabaciones de pantalla silenciosas en clips verticales con voz y subtítulos quemados. Sin APIs de pago: Python y ffmpeg.</p>
+            <p class="meta"><span>2026</span><span>Python</span><span>MIT</span></p>
+            <a class="project-link" href="https://github.com/laopro/talkicut" target="_blank" rel="noopener noreferrer"><span data-i18n="project.link">Ver repo</span> <span class="arrow" aria-hidden="true">↗</span></a>
+          </div>
+          <div class="terminal" aria-hidden="true">
+<pre>┌──────────────────────────────────────────────┐
+│  talkicut                                    │
+│                                              │
+│  Input    recording.mp4   (silent)           │
+│  Probe    duration · cuts · OCR              │
+│  Plan     beats + narration   plan.json      │
+│  Render   TTS + captions + fill              │
+│                                              │
+│  Output   1080x1920 · .mp4 · .srt            │
+│           blurred fill, no crop              │
+│                                              │
+│  [ probe ] [ plan ] [ render ] [ verify ]    │
+│  ██████████████████████░░░  render 3/4       │
+│  Writing: clip-02.mp4 · 00:38 / 00:52        │
+└──────────────────────────────────────────────┘</pre>
+          </div>
+        </div>
+      </article>
+
       <p class="after" data-i18n="project.after">El resto de mis proyectos vive en local, sin publicar.</p>
     </section>
 
