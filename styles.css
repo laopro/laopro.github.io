@@ -25,13 +25,13 @@
   --line: #2a2622;
   --accent: #ffb04a;
 
-  /* Evangelion title cards: heavy condensed serif + bold grotesk, white with amber glow */
+  /* Evangelion title cards: heavy condensed serif + bold grotesk, plain white */
   --font-display: "Times New Roman", Times, "Noto Serif JP", serif;
   --font-label: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
-  --glow: 0 0 1px #fff, 0 0 4px #ffe2b0, 0 0 10px rgba(255, 140, 40, 0.75), 0 0 22px rgba(255, 110, 20, 0.35);
-  --glow-soft: 0 0 3px rgba(255, 210, 150, 0.8), 0 0 8px rgba(255, 130, 30, 0.5);
+  --glow: none;
+  --glow-soft: none;
 
   --max: 1080px;
   --pad: clamp(20px, 6vw, 72px);
@@ -196,9 +196,7 @@ h1 {
 }
 
 .project-item + .project-item {
-  margin-top: clamp(56px, 9vh, 96px);
-  padding-top: clamp(56px, 9vh, 96px);
-  border-top: 1px solid var(--line);
+  margin-top: clamp(96px, 18vh, 200px);
 }
 
 .section-label {
@@ -405,6 +403,7 @@ h2 {
   align-items: flex-start;
   width: auto;
   margin: 0;
+  transform: none;
   text-shadow: none;
   letter-spacing: 0;
 }
