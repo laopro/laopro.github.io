@@ -249,8 +249,21 @@ h2 a {
 
 .project-link {
   display: inline-block;
-  margin-top: 22px;
-  font-size: 0.95rem;
+  margin-top: 24px;
+  padding: 12px 22px;
+  border: 2px solid #fff;
+  font-family: var(--font-label);
+  font-weight: 700;
+  font-size: 1.1rem;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: #fff;
+}
+
+.project-link:hover {
+  background: #fff;
+  color: #000;
 }
 
 .arrow {
