@@ -17,30 +17,24 @@
 }
 
 :root {
-  color-scheme: light dark;
+  color-scheme: dark;
 
-  --bg: #f5f3ee;
-  --fg: #141414;
-  --muted: #6b6862;
-  --line: #d8d4cb;
-  --accent: #c8452c;
+  --bg: #000;
+  --fg: #f4f1ea;
+  --muted: #a39d92;
+  --line: #2a2622;
+  --accent: #ffb04a;
 
-  --font-display: "Instrument Serif", Georgia, "Times New Roman", serif;
+  /* Evangelion title cards: heavy condensed serif + bold grotesk, white with amber glow */
+  --font-display: "Times New Roman", Times, "Noto Serif JP", serif;
+  --font-label: "Helvetica Neue", Helvetica, Arial, sans-serif;
   --font-body: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
   --font-mono: "IBM Plex Mono", ui-monospace, SFMono-Regular, Menlo, Consolas, monospace;
+  --glow: 0 0 1px #fff, 0 0 4px #ffe2b0, 0 0 10px rgba(255, 140, 40, 0.75), 0 0 22px rgba(255, 110, 20, 0.35);
+  --glow-soft: 0 0 3px rgba(255, 210, 150, 0.8), 0 0 8px rgba(255, 130, 30, 0.5);
 
   --max: 1080px;
   --pad: clamp(20px, 6vw, 72px);
-}
-
-@media (prefers-color-scheme: dark) {
-  :root {
-    --bg: #0e0e0e;
-    --fg: #edeae3;
-    --muted: #8a867e;
-    --line: #262626;
-    --accent: #e4694f;
-  }
 }
 
 *,
@@ -369,6 +363,56 @@ h2 a {
 .social a {
   font-size: 0.85rem;
   text-decoration: none;
+}
+
+/* Evangelion title card */
+
+h1,
+h2,
+.wordmark,
+.about-text {
+  font-family: var(--font-display);
+  font-weight: 700;
+  color: #fff;
+  text-shadow: var(--glow);
+}
+
+h1,
+h2,
+.wordmark {
+  text-transform: uppercase;
+  letter-spacing: -0.01em;
+}
+
+/* No free font matches Matisse EB, so squeeze Times horizontally; the 128% width cancels the 0.78 scale */
+h1,
+h2 {
+  width: 128%;
+  max-width: none;
+  transform: scaleX(0.78);
+  transform-origin: left;
+}
+
+h1 {
+  font-size: clamp(3.4rem, 12vw, 10rem);
+  line-height: 0.86;
+}
+
+h2 {
+  line-height: 0.92;
+}
+
+.kicker,
+.section-label,
+.index,
+.meta,
+.stack {
+  font-family: var(--font-label);
+  font-weight: 700;
+  font-size: 0.85rem;
+  letter-spacing: 0.02em;
+  color: #fff;
+  text-shadow: var(--glow-soft);
 }
 
 /* Mobile */
