@@ -15,7 +15,7 @@
   <meta name="twitter:card" content="summary_large_image">
   <link rel="icon" href="assets/favicon.svg" type="image/svg+xml">
   <link rel="preload" href="assets/fonts/ibm-plex-mono-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="stylesheet" href="styles.css?v=7">
+  <link rel="stylesheet" href="styles.css?v=8">
 </head>
 <body>
   <a class="skip" href="#contenido" data-i18n="skip">Saltar al contenido</a>
@@ -32,10 +32,15 @@
 
   <main id="contenido">
     <section class="hero wrap">
-      <p class="kicker" data-i18n="hero.kicker">Proyectos y experimentos</p>
-      <h1 data-i18n="hero.title">Hago herramientas pequeñas.</h1>
-      <p class="lede" data-i18n="hero.lede">Apps y scripts que resuelven problemas míos. Si sirven para alguien más, mejor.</p>
-      <p class="stack">Python · Rust · Luau · desktop · web</p>
+      <div class="card">
+        <h1 class="card-title">
+          <span class="l l-s" data-fit=".6" data-i18n="hero.l1">Hago</span>
+          <span class="l l-s" data-fit=".6" data-i18n="hero.l2">pequeñas</span>
+          <span class="l l-xl" data-fit=".63" data-i18n="hero.l3">herramientas.</span>
+        </h1>
+        <p class="card-ep"><span class="l" data-fit=".8" data-i18n="hero.ep">Proyectos:05</span></p>
+        <p class="card-sub"><span class="l" data-fit=".67" data-i18n="hero.sub">Apps y scripts</span></p>
+      </div>
     </section>
 
     <section id="proyecto" class="project wrap">
@@ -194,6 +199,6 @@
     </div>
   </footer>
 
-  <script src="main.js"></script>
+  <script src="main.js?v=2"></script>
 </body>
 </html>

@@ -3,9 +3,11 @@ const copy = {
     skip: "Saltar al contenido",
     "nav.project": "Proyectos",
     "nav.about": "Sobre mí",
-    "hero.kicker": "Proyectos y experimentos",
-    "hero.title": "Hago herramientas pequeñas.",
-    "hero.lede": "Apps y scripts que resuelven problemas míos. Si sirven para alguien más, mejor.",
+    "hero.l1": "Hago",
+    "hero.l2": "pequeñas",
+    "hero.l3": "herramientas.",
+    "hero.ep": "Proyectos:05",
+    "hero.sub": "Apps y scripts",
     "project.label": "Proyectos",
     "project.desc": "Descarga playlists de YouTube Music como audio. GUI para Windows y CLI, perfiles de calidad y descargas incrementales.",
     "project.desc2": "Convierte grabaciones de pantalla silenciosas en clips verticales con voz y subtítulos quemados. Sin APIs de pago: Python y ffmpeg.",
@@ -25,9 +27,11 @@ const copy = {
     skip: "Skip to content",
     "nav.project": "Projects",
     "nav.about": "About",
-    "hero.kicker": "Projects & experiments",
-    "hero.title": "I make small tools.",
-    "hero.lede": "Apps and scripts that solve my own problems. If they help someone else, even better.",
+    "hero.l1": "I make",
+    "hero.l2": "small",
+    "hero.l3": "tools.",
+    "hero.ep": "Projects:05",
+    "hero.sub": "Apps & scripts",
     "project.label": "Projects",
     "project.desc": "Downloads YouTube Music playlists as audio. Windows GUI and CLI, quality profiles, incremental downloads.",
     "project.desc2": "Turns silent screen recordings into vertical clips with voice and burned captions. No paid APIs: Python and ffmpeg.",
@@ -66,3 +70,14 @@ const setMeta = (selector, value) => {
 setMeta('meta[name="description"]', text.description);
 setMeta('meta[property="og:title"]', text.title);
 setMeta('meta[property="og:description"]', text.description);
+
+// Eva title cards squeeze each line horizontally; lines too long for the card get squeezed further to fit
+const fit = () => {
+  document.querySelectorAll("[data-fit]").forEach((el) => {
+    const room = el.closest(".card").clientWidth;
+    el.style.transform = `scaleX(${Math.min(parseFloat(el.dataset.fit), room / el.offsetWidth)})`;
+  });
+};
+fit();
+document.fonts.ready.then(fit);
+window.addEventListener("resize", fit);
